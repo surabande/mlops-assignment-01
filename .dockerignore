@@ -1,0 +1,6 @@
+.venv/
+venv/
+mlruns/
+notebooks/
+__pycache__/
+*.ipynb

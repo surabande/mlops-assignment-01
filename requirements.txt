@@ -6,5 +6,6 @@ seaborn
 mlflow
 fastapi
 uvicorn
-pytesthttpx
+pytest
+httpx
 httpx2

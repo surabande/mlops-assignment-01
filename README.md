@@ -59,7 +59,8 @@ graph TD
 
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
-    class C,E,F,G highlight;```
+    class C,E,F,G highlight;
+```
 
 ## 6. CI/CD Pipeline
 An automated GitHub Actions workflow was implemented to ensure code quality and build stability. The pipeline triggers on pushes to the main branch and automates:

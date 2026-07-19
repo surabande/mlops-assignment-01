@@ -44,7 +44,6 @@ Two classification models were evaluated: Logistic Regression and Random Forest.
 
 ```mermaid
 graph TD
-    %% Define Nodes
     A[Data Ingestion<br/>UCI Dataset] --> B(Data Preprocessing & Training<br/>Scikit-Learn)
     B --> C[(MLflow<br/>Experiment Tracking)]
     B --> D[FastAPI Application<br/>Model Serving]
@@ -58,24 +57,9 @@ graph TD
     
     I --> J((Swagger UI / Client<br/>Predictions))
 
-    %% Styling
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
-    class C,E,F,G highlight;
-
-### What this diagram illustrates:
-1. **The Machine Learning Flow:** Data is ingested and trained, with metrics and models logged directly to MLflow.
-2. **The API Layer:** The best model is wrapped in a FastAPI application.
-3. **The CI/CD Flow:** Pushing to GitHub triggers GitHub Actions, which runs Pytest and builds the Docker image.
-4. **The Production Layer:** The Docker image is deployed to the local Kubernetes cluster and exposed via a Load Balancer so the end-user can request predictions.
-
-If you prefer a traditional image file over code, you can copy the Mermaid code above, paste it into the [Mermaid Live Editor](https://mermaid.live/), and download it as a PNG to save in your repository. 
-
-<ElicitationsGroup message="What would you like to do next?">
-<Elicitation label="Review the video recording requirements" query="Review the video recording requirements" query_intent="CLICKABLE_SUGGESTION" />
-<Elicitation label="Export the Markdown report to PDF" query="Export the Markdown report to PDF" query_intent="CLICKABLE_SUGGESTION" />
-<Elicitation label="Review the final project checklist" query="Review the final project checklist" query_intent="CLICKABLE_SUGGESTION" />
-</ElicitationsGroup>
+    class C,E,F,G highlight;```
 
 ## 6. CI/CD Pipeline
 An automated GitHub Actions workflow was implemented to ensure code quality and build stability. The pipeline triggers on pushes to the main branch and automates:

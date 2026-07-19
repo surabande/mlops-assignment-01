@@ -82,3 +82,7 @@ Kubernetes Pods & Services:
 Live API Prediction:
 ![alt text](<Screenshot 2026-07-15 at 1.03.47 AM.png>)
 
+**Video Walkthrough:**
+
+https://drive.google.com/file/d/1EZCTU-WEt4Hujlvh6bDUN7-Ccmp_-r5t/view?usp=sharing
+

@@ -1,0 +1,23 @@
+artifact_path: /Users/pratikshabande/Downloads/mlops-assignment-01/mlruns/1/models/m-58255605b08c4b55a514ab1e05ec3548/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-58255605b08c4b55a514ab1e05ec3548
+model_size_bytes: 582647
+model_uuid: m-58255605b08c4b55a514ab1e05ec3548
+prompts: null
+run_id: d1b0b37a15634d779e76715a412a15f7
+utc_time_created: '2026-07-19 08:39:33.749899'

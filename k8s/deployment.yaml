@@ -17,6 +17,6 @@ spec:
       containers:
       - name: heart-disease-api
         image: heart-disease-api:latest
-        imagePullPolicy: Never  # Ensures K8s uses your local Docker image
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8000
